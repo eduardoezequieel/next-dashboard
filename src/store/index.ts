@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counter/counterSlice';
+import pokemonReducer from './pokemon/pokemonSlice';
 
 export const store = configureStore({
   reducer: {
-    counterReducer,
+    counter: counterReducer,
+    pokemon: pokemonReducer,
   },
 });
 
