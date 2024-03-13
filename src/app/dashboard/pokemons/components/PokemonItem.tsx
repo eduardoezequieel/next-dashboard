@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const PokemonItem = ({ pokemon }: Props) => {
-  const isFavorite = useAppSelector((state) => !!state.pokemon[pokemon.id]);
+  const isFavorite = useAppSelector((state) => !!state.pokemon.favorites[pokemon.id]);
   const dispatch = useAppDispatch();
 
   return (
